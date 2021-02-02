@@ -1,10 +1,6 @@
-import requests
-from requests import get
-from bs4 import BeautifulSoup
 import pandas
-import itertools
 import streamlit as st
-import numpy as np
+import numpy_financial as npf
 
 
 st.title("""Leasing kalkylator""")
@@ -22,7 +18,7 @@ down_payment = int(down_payment)
 interestRate = float(interestRate)/100
 interestRate_per_month = interestRate/12
 
-monthlyPayment_np = np.pmt(interestRate/12, nper, loanAmount);
+monthlyPayment_np = npf.pmt(interestRate/12, nper, loanAmount);
 
 st.write("Lånesumma: ")
 st.write(loanAmount)
@@ -30,4 +26,6 @@ st.write(loanAmount)
 
 st.write("Månatliga kostnaden blir då: ")
 st.write(int(monthlyPayment_np))
+
+
 
