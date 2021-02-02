@@ -3,7 +3,7 @@ import streamlit as st
 import numpy_financial as npf
 
 
-st.title("""Leasing kalkylator v0.1""")
+st.title("""Leasing kalkylator v0.2""")
 
 purchase_price = st.sidebar.number_input("Inköpsvärde:    ", value=793000)
 down_payment = st.sidebar.number_input("Insats:   ",value=100000)
