@@ -8,7 +8,7 @@ st.title("""Leasing kalkylator v3""")
 purchase_price = st.sidebar.number_input("Inköpsvärde:    ", value=793000)
 down_payment = st.sidebar.number_input("Insats:   ",value=100000)
 residual_value = st.sidebar.number_input("Önskat restvärde:   ",value=100000)
-loanAmount = purchase_price - down_payment - residual_value
+loanAmount = purchase_price - down_payment
 
 interestRate = st.sidebar.number_input("Låneränta:   ",value=1.25)
 nper = st.sidebar.number_input("Antal perioder:   ",value=48)
