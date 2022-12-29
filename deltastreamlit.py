@@ -23,7 +23,7 @@ else:
 
 #Stockdata
 stockdata = []
-tickers = ["0A0H.UK", "COIN", "INTU", "TENB", "DASH"]
+tickers = ["0A0H.UK", "COIN", "INTU", "TENB", "DASH", "XM", "AFRM", "BEIJ-B", ]
 
 
 for ticker in tickers:
