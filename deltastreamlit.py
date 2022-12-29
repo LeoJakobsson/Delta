@@ -39,4 +39,4 @@ stockdata_filtered
 
 #Graphs
 st.write("Stock returns")
-st.line_chart(stockdata_filtered)
+st.line_chart(stockdata_filtered, y="Close")
